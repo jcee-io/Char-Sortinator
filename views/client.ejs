@@ -2,27 +2,30 @@
 <html>
 <head>
 	<title>Char Sortinator</title>
+	<style type="text/css">
+		#app {
+			margin: auto;
+		}
+	</style>
 </head>
 <body>
-	<div>
+	<div id="app">
 		<div>
 			<h1>Please Enter a String</h1>
-			<form action="/input" method="POST">
+			<form action="/" method="POST" onSubmit='handler()'>
 				<input type="text" name="string" id="input">
-				<button onClick="clickHandler()">Submit</button>
+				<button>Submit</button>
 			</form>
 		</div>
 		<div>
 			<h1>The Result From Sorting</h1>
-			<h3 id="result"></h3>
+			<h3 id="result"><%= myString %></h3>
 		</div>
 	</div>
 
 	<script>
-		const clickHandler = event => {
-			const input = document.getElementById('input');
-			const result = document.getElementById('result');
-			console.log(input.value);
+		const handler = event => {
+			event.preventDefault();
 		};
 	</script>
 
