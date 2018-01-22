@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jcruzz/Char-Sortinator/issues"
   },
-  "homepage": "https://github.com/jcruzz/Char-Sortinator#readme"
+  "homepage": "https://github.com/jcruzz/Char-Sortinator#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
